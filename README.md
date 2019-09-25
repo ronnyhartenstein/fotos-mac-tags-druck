@@ -8,6 +8,25 @@ Diese Repo sammelt das Tooling um..
   - Anzahl ermitteln mit `find ~/Pictures/Export/fotosammlung -type f|wc -l `)
   - Gesamtgröße `du -hs ~/Pictures/Export/fotosammlung/*`
 
+## Scripte
+
+**`copy_photos.php`**: Erstellt Druck-fertige Bilder aus einer Quell-Fotosammlung im Ziel-Order
+
+### Tag-Management
+
+`save_tags.php`: sucht alle getaggten Bilder zusammen und speichert diese in einer JSON
+
+`restore_tags.php`: setzt die Tags von Bildern aus einer gespeicherten JSON-Datei
+
+### Hilfsscripte
+
+`detect_wide_pics.php`: sucht überbreite Bilder und schreibt sie in eine JSON
+
+`exif.php`: EXIF Daten aus Foto dumpen
+
+`fix_timestamp.php`**: stellt Änderungszeitpunkt via `touch` auf EXIF-Metadaten `DateTimeOriginal`
+
+
 ## TL;DR
 
 **Bilder im Finder taggen** -> per Automator Program + Default für JPG-Dateien -> Cmd+O taggt Datei somit.
